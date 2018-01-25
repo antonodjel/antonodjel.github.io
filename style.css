@@ -180,3 +180,18 @@ a:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.sub {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sub {
+  display: block;
+  max-height: 200px;
+}
+.sub a {
+  background-color: #AFAFAF;
+}
+.sub a:hover {
+  background-color: #6A6A6A;
+}
