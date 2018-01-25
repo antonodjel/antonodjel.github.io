@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="description" content="Web seminar - HTML&CSS">
+    	<meta name="keywords" content="RAM, SSD, HDD, memorija, brzina, USB">
+    	<meta name="author" content="Anton Vidović">
+        <title>RAM - Brzina</title>
+	</head>
+    
+	<body>
+    <div id="hbox">
+    <header>
+         <p>Memorijska Hijerarhija</p>
+    </header>
+    
+    <div class="my-box">
+	<div class="navbar">
+  		<a href="index.html" class="w3-large"><i class="fa fa-home"></i> Uvod</a>
+  		<a href="opcenito.html">Općenito</a>
+        <div class="dropdown">
+    		<button class="dropbutton">RAM &#8675;</button>
+    		<div class="dropdown-content">
+      			<a href="ram_brzina.html">Brzina</a>
+      			<a href="ram_odaziv.html">Odaziv</a>
+      			<a href="ram_velicina.html">Veličina</a>
+    		</div>
+  		</div> 
+        <div class="dropdown">
+    		<button class="dropbutton">Pohrana podataka &#8675;</button>
+    		<div class="dropdown-content">
+      			<a href="hdd.html">HDD</a>
+      			<a href="ssd.html">SSD &#8674;</a>
+      			<a href="fast.html">Najbrža SSD tehnologija</a>
+                <a href="usb.html">USB &#8674;</a>
+    		</div>
+  		</div>   
+        <a href="zak.html">Zaključak</a>
+        <a href="lit.html">Literatura</a>
+        <a href="ram_brzina.html" class="w3-large" title="Refresh"><i class="fa fa-refresh"></i></a>
+        <a href="https://www.facebook.com/vidoxproduction/" class="w3-large" title="Vidox Production"><i class="fa fa-user-circle"></i></a>
+	</div>	
+    	<h1>RAM</h1>
+        <p>RAM je memorija u računalo koja ima nasumični pristup podatcima. Ona je tzv. primarna memorija računala koja služi za obradu podataka u velikim brzinama.  Današnji tipični tip RAM memorije je DDR4. Odlikuje brzinama do 3600+ MHz OC  i moguće su još veće brzine, ali uz adekvatnu opremu naravno. Prethdna DDR3 memorija dosezala je nekih 1600MHz, pa je skok na DDR4 memoriju bio jako veliki i utjecajan jer se uz povećanje brzine smanjila i potrošnja (sa 1,45 na 1,35V), a time i toplina samih DIMM-ova. Kao što sam naveo, postoji više vrsta DDR4 memorija ovisno o brzini (MHz) i odazivu (CAS/CL)  primarno.</p>
+        
+        <h2>Brzina</h2>
+        <p>Osnovni takt na kojem sve DDR4 rade su zadane su po JEDEC-u i to iznosi 2133MHz. Intel danas stoji na 2133/2400MHz sa svojim chipsetom.. Paketi memorija dolaze u naravno mogućim većim brzinama, a to im omogućuje Intelova XMP (Xtreme Memory Profile) tehnologija u BIOS-u. To je takozvani automatski OC na željenu brzinu u MHz, izraženu na paketu memorije uz adekvatnu opremu.. No, čemu služi brzina memorije? Teoretski, brža memorija proporcionalna je bržem radu? Ne uvijek! Naš procesor onda nebi mogao procesirati toliku količinu podataka i „gušio“ bi se u radu. Na primjeru tablice vidimo da FPS  u određenoj igrici varira o brzini memorije i skalira se proporcionalno sa bržom memorijom. Brzina varira sa radom u igricama, jer ovisi kako je kalibriran engine igrice sa brzinom memorije. Kod sintetičkih mjerenja, brzina memorije nema neki veliki učinak na performanse Nekakva zlatna sredina danas iznosi 3200MHz, jer i da idemo sa većim brzinama, nebi bilo smisla jer nebi dobili veći učinak za bolji rad, a koštalo bi nas puno više.</p>
+        
+        <table style="width: 40%" align="center">
+        <caption><b>Rise of the Tomb Raider</b></caption>
+  			<tr>
+    			<th>SPECS</th>
+    			<th>Avg. FPS</th> 
+  			</tr>
+  			<tr>
+				<td>I7 - DDR4-3600MHz</td>
+    			<td>175.5</td> 
+  			</tr>
+            <tr>
+				<td>I7 - DDR4-3200MHz</td>
+    			<td>173.5</td> 
+  			</tr>
+            <tr>
+				<td>I7 - DDR4-2666MHz</td>
+    			<td>163.1</td> 
+  			</tr>
+            <tr>
+				<td>R1700X - DDR4-3200MHz</td>
+    			<td>142.2</td> 
+  			</tr>
+            <tr>
+				<td>R1700X - DDR4-2666MHz</td>
+    			<td>135</td> 
+  			</tr>
+            <tr>
+				<td>R1700X - DDR4-2133MHz</td>
+    			<td>130.7</td> 
+  			</tr>
+        </table>
+        
+		<footer>
+        	<hr class="double"><br>
+        	<span class="left">&copy; Anton Vidović - Odjel za informatiku</span>
+        	<span class="right">Napravljeno povodom: <a href="https://moodle.srce.hr/2017-2018/">"Seminar za <em>Osnove informatike 1</em>"</a></span>​
+		</footer>  
+    </div>
+    </div>   
+    </body>   
+    
+</html>

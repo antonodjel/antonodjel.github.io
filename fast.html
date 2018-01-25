@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="description" content="Web seminar - HTML&CSS">
+    	<meta name="keywords" content="RAM, SSD, HDD, memorija, brzina, USB">
+    	<meta name="author" content="Anton Vidović">
+        <title>Pohrana - Najbrža tehnologija</title>
+	</head>
+    
+	<body>
+    <div id="hbox">
+    <header>
+         <p>Memorijska Hijerarhija</p>
+    </header>
+    
+    <div class="my-box">
+	<div class="navbar">
+  		<a href="index.html" class="w3-large"><i class="fa fa-home"></i> Uvod</a>
+  		<a href="opcenito.html">Općenito</a>
+        <div class="dropdown">
+    		<button class="dropbutton">RAM &#8675;</button>
+    		<div class="dropdown-content">
+      			<a href="ram_brzina.html">Brzina</a>
+      			<a href="ram_odaziv.html">Odaziv</a>
+      			<a href="ram_velicina.html">Veličina</a>
+    		</div>
+  		</div> 
+        <div class="dropdown">
+    		<button class="dropbutton">Pohrana podataka &#8675;</button>
+    		<div class="dropdown-content">
+      			<a href="hdd.html">HDD</a>
+      			<a href="ssd.html">SSD &#8674;</a>
+      			<a href="fast.html">Najbrža SSD tehnologija</a>
+                <a href="usb.html">USB &#8674;</a>
+    		</div>
+  		</div>   
+        <a href="zak.html">Zaključak</a>
+        <a href="lit.html">Literatura</a>
+        <a href="fast.html" class="w3-large" title="Refresh"><i class="fa fa-refresh"></i></a>
+        <a href="https://www.facebook.com/vidoxproduction/" class="w3-large" title="Vidox Production"><i class="fa fa-user-circle"></i></a>
+	</div>	
+    	<h1>Pohrana podataka</h1>
+        <p>Svakodnevno pisanje i brisanje podataka, svakodnevno downloadiranje torrenta na hard disk, nošenje prezentacija na USB-u, instaliravanje programa na računalu, sviranje muzike... svi ti podatci su na našim stvarima za pohranu (HDD, SSD, NVMe , USB itd.). Kako pohrana uopce funkcionira i koji su nam nacini za pohranit podatke, objasnit cemo ovdje.</p>
+        
+        <h2>Najbrža SSD tehnologija - explained</h2>
+        <p>•	SATA - teoretske brzine do cca. 600MB/s, no ima problem sa latency-em jer nije direktno povezana sa CPU-om</p>
+        <p>•	SATA-express - gotovi izumrli port koji nitko ne koristi zbog velikog konektora i manjak drivera; koristi 2 PCIe lanes direktno povezane sa CPU-om</p>
+        <p>•	U.2 - koristi 4 PCIe lanes</p>
+        <p>•	M.2 - 4 PCIe lanes; kompaktan; izrazito brz; koristi se u laptopima i noteboocima</p>
+        <p>Svi navedeni utori podržavaju više od jednog protokola za protok podataka. To znači da imamo više od jednog načina na koji PC komunicira sa controllerom u drive, za razliku od fizikalnog spoja.  Za maximalne brzine, morate znati da vaša matična podržava tolike brzine i tehnologiju. Sve novije arhitekture od Z97 i X99 to podržavaju. 
+Za primjer uzmemo jedan server koji se sastoji od specijaliziranog kućišta, ECC RAM-a, dual Xeon  procesora,  10Gb  mrežne kartice i naravno samih driveova. Konkretnije 24 komada Intel 1,2TB NVMe PCIe SSD sa teoretskim brzinama od 2500MB/s čitanja i 1200MB/s pisanja. Sve zajedno to ide u RAID 0 polje. Rezultati su iznenađujući. Pri sekvencijalnom čitanju od 512KB, brzine čitanja i pisanja su oko 10GB/s, što je skoro blizu maximalnih 16GB/s koje PCIe utor podržava. 
+</p>
+
+        <img src="img/fast.jpg" alt="ocz_m.2" height="235" width="350">
+		<footer>
+        	<hr class="double"><br>
+        	<span class="left">&copy; Anton Vidović - Odjel za informatiku</span>
+        	<span class="right">Napravljeno povodom: <a href="https://moodle.srce.hr/2017-2018/">"Seminar za <em>Osnove informatike 1</em>"</a></span>​
+		</footer>  
+    </div>
+    </div>   
+    </body>   
+    
+</html>

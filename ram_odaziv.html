@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="description" content="Web seminar - HTML&CSS">
+    	<meta name="keywords" content="RAM, SSD, HDD, memorija, brzina, USB">
+    	<meta name="author" content="Anton Vidović">
+        <title>RAM - Odaziv</title>
+	</head>
+    
+	<body>
+    <div id="hbox">
+    <header>
+         <p>Memorijska Hijerarhija</p>
+    </header>
+    
+    <div class="my-box">
+	<div class="navbar">
+  		<a href="index.html" class="w3-large"><i class="fa fa-home"></i> Uvod</a>
+  		<a href="opcenito.html">Općenito</a>
+        <div class="dropdown">
+    		<button class="dropbutton">RAM &#8675;</button>
+    		<div class="dropdown-content">
+      			<a href="ram_brzina.html">Brzina</a>
+      			<a href="ram_odaziv.html">Odaziv</a>
+      			<a href="ram_velicina.html">Veličina</a>
+    		</div>
+  		</div> 
+        <div class="dropdown">
+    		<button class="dropbutton">Pohrana podataka &#8675;</button>
+    		<div class="dropdown-content">
+      			<a href="hdd.html">HDD</a>
+      			<a href="ssd.html">SSD &#8674;</a>
+      			<a href="fast.html">Najbrža SSD tehnologija</a>
+                <a href="usb.html">USB &#8674;</a>
+    		</div>
+  		</div>   
+        <a href="zak.html">Zaključak</a>
+        <a href="lit.html">Literatura</a>
+        <a href="ram_odaziv.html" class="w3-large" title="Refresh"><i class="fa fa-refresh"></i></a>
+        <a href="https://www.facebook.com/vidoxproduction/" class="w3-large" title="Vidox Production"><i class="fa fa-user-circle"></i></a>
+	</div>	
+    	<h1>RAM</h1>
+        <p>RAM je memorija u računalo koja ima nasumični pristup podatcima. Ona je tzv. primarna memorija računala koja služi za obradu podataka u velikim brzinama.  Današnji tipični tip RAM memorije je DDR4. Odlikuje brzinama do 3600+ MHz OC  i moguće su još veće brzine, ali uz adekvatnu opremu naravno. Prethdna DDR3 memorija dosezala je nekih 1600MHz, pa je skok na DDR4 memoriju bio jako veliki i utjecajan jer se uz povećanje brzine smanjila i potrošnja (sa 1,45 na 1,35V), a time i toplina samih DIMM-ova. Kao što sam naveo, postoji više vrsta DDR4 memorija ovisno o brzini (MHz) i odazivu (CAS/CL)  primarno.</p>
+        
+        <h2>Odaziv</h2>
+        <p>Uz brzinu memorije, često sam rad memorije mjerimo i njenim odazivom. Odaziv je često izražen kao skup od 4 broja zaredani jedan za drugim (npr. 15-16-16-35). To su brojevi ciklusa po sekundi koje RAM-u treba da napravi određenu stvar. Manji odaziv proporcionalan je sa bržim radom. U teoriji to zvuči savršeno, ali u stvarnom svijetu, to je zanemarivo. Za neke prilike, veoma brza memorija se može koristiti kao i cache memorija ili kao virtualno računalo za dijeljenje. No, zajedno sa brzinom, odaziv ubiti određuje kompletnu brzinu memorije (ODAZIV / BRZINA = LATENCY ns). Uzmimo navedeni primjer gore: </p>
+        
+        <p2>15 – 16 -16 – 35</p2>
+        
+        <p>-	Prvi broj predstavlja sam odaziv od 15 nanosekundi. To je vrijeme koje je potrebno memoriji da pristupi podatcima prije nego što ga krene obrađivati</p>
+		<p>-	Drugi broj  (tRCD) predstavlja odaziv između redka i stupca kada RAM pristupa podatcima u gridu, tj. mreži jer su tako podatci raspoređeni</p>
+		<p>-	Treći broj (tRP) predstavlja odaziv kada RAM traži podatke po gridu i otvara nove redove da pronađe podatke</p>
+		<p>-	Četvrti broj (tRAS) predstavlja minimalan broj ns da red ili stupac bude otvoren, da se podatci pročitaju na siguran način i zato je on najveći broj od ostalih</p>
+        
+		<footer>
+        	<hr class="double"><br>
+        	<span class="left">&copy; Anton Vidović - Odjel za informatiku</span>
+        	<span class="right">Napravljeno povodom: <a href="https://moodle.srce.hr/2017-2018/">"Seminar za <em>Osnove informatike 1</em>"</a></span>​
+		</footer>  
+    </div>
+    </div>   
+    </body>   
+    
+</html>
